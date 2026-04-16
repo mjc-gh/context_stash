@@ -19,8 +19,8 @@ This application is built with **Ruby on Rails 8.1** and Stimulus.
 **Required**:
 - Frozen string literals at top of `.rb` files: `# frozen_string_literal: true`
 - Snake case naming: `req_1` not `req1`
-- No unnecessary comments or tests for built-in validations
 - One class per `.rb` file
+- Do not add unnecessary code comments
 
 **Structure**:
 - Callbacks → Enums → Scopes → Validations (in class body)
@@ -31,6 +31,17 @@ This application is built with **Ruby on Rails 8.1** and Stimulus.
 - Use explicit foreign/primary keys when needed
 - Use `self.table_name` only if non-standard
 
-**Controllers**: RESTful conventions with strong parameters
+**Controllers**:
+- RESTful conventions with strong parameters
+- Prefer resource routing
 
-**Views**: Render JSON or HTML per endpoint purpose
+**Views**:
+- Render JSON or HTML per endpoint purpose
+
+**Testing**:
+- Prefer less test cases while maximizing code coverage
+- Don't test framework features (validations, relations, other declarative APIs)
+
+## References
+
+- **Testing Stack**: Minitest, simplecov (with 100% coverage required), RuboCop-Rails, Brakeman
