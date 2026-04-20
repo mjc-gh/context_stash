@@ -10,3 +10,5 @@ Development and with LLMs.
   commands for agentic tooling.
 - `RAILS.md`: Template text for a `AGENTS.md` file for Rails
   development.
+- `RAILS-TURBO.md`: Reference notes for using Turbo with Rails
+  controllers and views
