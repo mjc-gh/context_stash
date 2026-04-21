@@ -12,3 +12,4 @@ Development and with LLMs.
   development.
 - `RAILS-TURBO.md`: Reference notes for using Turbo with Rails
   controllers and views
+- `RUBY-MINITEST.md`: Reference notes for testing with Minitest
