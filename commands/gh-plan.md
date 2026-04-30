@@ -8,7 +8,7 @@ Fetch GitHub issue #$1 and refine it with a detailed implementation plan.
 **Instructions:**
 
 1. Fetch the current issue content:
-   `gh issue view $1 --repo [INSERT_REPO]`
+   `gh api repos/[GITHUG_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
 
 2. Analyze the issue to understand:
    - What problem needs to be solved
@@ -36,7 +36,7 @@ Fetch GitHub issue #$1 and refine it with a detailed implementation plan.
    - A "## Checklist" section with actionable task items using `- [ ]` format
 
 6. Update the issue on GitHub:
-   `gh issue edit $1 --repo [INSERT_REPO] --body "REFINED_BODY"`
+   `gh issue edit $1 --repo [GITHUG_USER]/[GITHUB_REPO] --body "REFINED_BODY"`
 
 7. Report success and show a summary of the plan added to the issue.
 

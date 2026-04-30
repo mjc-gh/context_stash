@@ -42,6 +42,10 @@ This application is built with **Ruby on Rails 8.1** and Stimulus.
 - Prefer less test cases while maximizing code coverage
 - Don't test framework features (validations, relations, other declarative APIs)
 
+**Integration Tests**:
+- Prefer `assert_select`; never assert against `response.body` for HTML or Turbo Stream actions
+- Never use `assert_template`
+
 ## References
 
 - **Testing Stack**: Minitest, simplecov (with 100% coverage required), RuboCop-Rails, Brakeman

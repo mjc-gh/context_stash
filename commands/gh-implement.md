@@ -5,7 +5,7 @@ model: openrouter/anthropic/claude-haiku-4.5
 
 Here is the GitHub issue to implement:
 
-`gh issue view $1 --repo [INSERT_REPO]`
+`gh api repos/[GITHUG_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
 
 **Instructions:**
 
