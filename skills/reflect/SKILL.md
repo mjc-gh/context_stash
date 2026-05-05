@@ -1,5 +1,5 @@
 ---
-name: session-retro
+name: reflect
 description: Hold a retrospective on the session and update documentation
 license: MIT
 ---

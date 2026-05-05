@@ -1,5 +1,5 @@
 ---
-name: git-commit
+name: commit
 description: Stage changes, commit with semantic message, and push to main
 license: MIT
 ---

@@ -5,7 +5,7 @@ model: openrouter/anthropic/claude-haiku-4.5
 
 Fetch the issue to content using:
 
-`gh api repos/[GITHUG_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
+`gh api repos/[GITHUB_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
 
 **Instructions:**
 

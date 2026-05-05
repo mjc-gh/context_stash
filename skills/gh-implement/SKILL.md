@@ -1,5 +1,5 @@
 ---
-name: gh-issue-implement
+name: gh-implement
 description: Fetch a GitHub issue and implement the required changes
 license: MIT
 ---
@@ -16,7 +16,7 @@ Use this skill when you need to implement a specific GitHub issue. You should ha
 
 Fetch the issue to content using:
 
-`gh api repos/[GITHUG_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
+`gh api repos/[GITHUB_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
 
 **Instructions:**
 

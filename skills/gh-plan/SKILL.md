@@ -1,11 +1,11 @@
 ---
-name: gh-issue-plan
+name: gh-plan
 description: Refine a GitHub issue with a detailed implementation plan and checklist
 license: MIT
 ---
 
 ## What I do
-- Analyze GitHub issues to understand requirements
+- Analyze issue to understand requirements
 - Explore the codebase to identify affected components
 - Create a comprehensive implementation plan with checklist
 
@@ -15,7 +15,7 @@ Use this skill when you need to create a comprehensive implementation plan for a
 ## Instructions
 
 1. Fetch the current issue content:
-   `gh api repos/[GITHUG_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
+   `gh api repos/[GITHUB_USER]/[GITHUB_REPO]/issues/$1 | jq -r '"### \(.title)\n\(.body)"'`
 
 2. Analyze the issue to understand:
    - What problem needs to be solved
@@ -43,7 +43,7 @@ Use this skill when you need to create a comprehensive implementation plan for a
    - A "## Checklist" section with actionable task items using `- [ ]` format
 
 6. Update the issue on GitHub:
-   `gh issue edit $1 --repo [GITHUG_USER]/[GITHUB_REPO] --body "REFINED_BODY"`
+   `gh issue edit $1 --repo [GITHUB_USER]/[GITHUB_REPO] --body "REFINED_BODY"`
 
 7. Report success and show a summary of the plan added to the issue.
 
