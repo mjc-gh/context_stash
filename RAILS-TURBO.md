@@ -33,6 +33,15 @@ def create
 end
 ```
 
+### Destructive Actions (DELETE requests)
+
+Modern pattern (NEVER use `data-method` with `link_to`, always use a form):
+```erb
+<%= form_with url: item_path(item), method: :delete, local: true do |form| %>
+  <%= form.button "Delete", data: { turbo_confirm: "Sure?" } %>
+<% end %>
+```
+
 ### Key Data Attributes
 | Attribute | Purpose |
 |-----------|---------|
