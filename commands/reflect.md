@@ -1,5 +1,5 @@
 ---
-description: Retro/Reflect on session and current documentation
+description: Reflect on session and current documentation
 ---
 
 Let’s hold a brief retro and reflect on this session and the latest changes made:
